@@ -15,14 +15,14 @@ variable "gcp_project" {
   description = "GCP project name"
 }
 
+variable "network_name" {
+  default = "tf-gke-k8s"
+}
+
 provider "google" {
   credentials = var.gcp_credentials
   project     = var.gcp_project
   region      = var.gcp_region
-}
-
-variable "network_name" {
-  default = "tf-gke-k8s"
 }
 
 resource "google_compute_network" "default" {
