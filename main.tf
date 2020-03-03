@@ -40,7 +40,7 @@ resource "google_compute_subnetwork" "default" {
 
 resource "google_compute_subnetwork" "default2" {
   name                     = "andy"
-  ip_cidr_range            = "10.128.0.0/20"
+  ip_cidr_range            = "10.10.0.0/20"
   network                  = google_compute_network.default.self_link
   region                   = var.gcp_region
   private_ip_google_access = true
