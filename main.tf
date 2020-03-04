@@ -42,6 +42,6 @@ output network {
   value = google_compute_subnetwork.default.network
 }
 
-#output subnetwork_name {
-#  value = google_compute_subnetwork.default.name
-#}
+output subnetwork_name {
+  value = google_compute_subnetwork.default.name
+}
